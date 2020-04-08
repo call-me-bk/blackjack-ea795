@@ -53,7 +53,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   var DECK;
   var myDeck = [];
   
-  var Dealer,Player;
+  var Dealer=0,Player=0;
   function initialiseGame(){
   	SUIT = [1,2,3,4,5,6,7,8,9,10,10,10,10];
 	DECK = SUIT.concat(SUIT.concat(SUIT.concat(SUIT)));
@@ -64,7 +64,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     myDeck = shuffle(myDeck);
     Dealer = getCard();
     Player = getCard()+getCard();
-    agent.add("Okay!, Here we go!");
+    //agent.add("Okay!, Here we go!");
   }
   
   function getCard(){
