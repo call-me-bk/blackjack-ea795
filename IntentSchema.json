@@ -1,0 +1,83 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "blackjacktwentyone",
+      "intents": [
+        {
+          "name": "Stand",
+          "samples": [
+            "stand"
+          ]
+        },
+        {
+          "name": "LetSPlay",
+          "samples": [
+            "absolutely",
+            "alright",
+            "alright why not",
+            "confirm",
+            "do it",
+            "exactly",
+            "for sure",
+            "go ahead",
+            "i agree",
+            "i don\u0027t mind",
+            "i think so",
+            "it looks perfect",
+            "it\u0027s fine",
+            "it\u0027s okay",
+            "of course",
+            "ok",
+            "okay",
+            "okay i will",
+            "perfect",
+            "right",
+            "sg",
+            "sounds correct",
+            "sounds good",
+            "sure",
+            "sure why not",
+            "that one works",
+            "that works",
+            "that\u0027s correct",
+            "why not",
+            "yeah",
+            "yep",
+            "yep that\u0027s ok",
+            "yep that\u0027s right",
+            "yes",
+            "yes i agree",
+            "yes i can",
+            "yes i do",
+            "yes please",
+            "yes that\u0027s alright",
+            "yes that\u0027t ok",
+            "yes you can do it",
+            "yup"
+          ]
+        },
+        {
+          "name": "Hit",
+          "samples": [
+            "hit"
+          ]
+        },
+        {
+          "name": "GetDecks",
+          "slots": [
+            {
+              "name": "numberslot",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{numberslot}",
+            "{numberslot} decks",
+            "let s play with {numberslot}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
