@@ -79,7 +79,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   }
   var win;
   function hit(agent){
-    var presentCard = getCard(); //method doesn't work : MalformedResponse
+    var presentCard = getCard();
+//Response time too long
+ //method doesn't work : MalformedResponse
 //Failed to parse Dialogflow response into AppResponse because of invalid platform response: Could not find a RichResponse or SystemIntent in the platform response for agentId: cdc1c904-5197-4e7d-8c68-3ceb67aa6600 and intentId: b6240d80-0773-443b-87e7-ad48e4fd1856. WebhookStatus: code: 14 message: "Webhook call failed. Error: UNAVAILABLE." ..
     if(Player <= 21){
     	Player = Player + presentCard;
